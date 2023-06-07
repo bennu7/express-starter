@@ -5,10 +5,10 @@ import expressAsyncHandler from "express-async-handler";
 class HelloController {
   private helloServices = new HelloServices();
 
-  public index = async (req: Request, res: Response) => {
+  public index = expressAsyncHandler(async (req: Request, res: Response) => {
     const hello = await this.helloServices.getHello();
     res.status(200).json({ message: hello });
-  };
+  });
 }
 
 export default HelloController;
