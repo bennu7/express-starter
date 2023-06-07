@@ -1,0 +1,10 @@
+.env
+package-lock.json
+node_modules/
+dist/
+yarn.lock
+docker-compose.dev.yml
+Dockerfile.dev
+be-kg-app-server.pem
+.idea/
+
