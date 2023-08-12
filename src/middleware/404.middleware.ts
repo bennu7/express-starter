@@ -6,10 +6,7 @@ const NotFoundMiddleware = async (
   next: NextFunction
 ) => {
   try {
-    res.status(404).json({
-      sttus_code: 404,
-      message: "Not Found Route",
-    });
+    res.status(404).render("404", { title: "404" });
   } catch (err) {
     next(err);
   }

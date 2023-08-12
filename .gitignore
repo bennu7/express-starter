@@ -7,4 +7,4 @@ docker-compose.dev.yml
 Dockerfile.dev
 be-kg-app-server.pem
 .idea/
-
+.DS_Store

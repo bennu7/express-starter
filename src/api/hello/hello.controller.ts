@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
-import HelloServices from "@/services/hello.service";
 import expressAsyncHandler from "express-async-handler";
+
+import HelloServices from "@/services/hello.service";
 
 class HelloController {
   private helloServices = new HelloServices();

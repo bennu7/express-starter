@@ -1,5 +1,6 @@
-import { Routes } from "@/interfaces/routes.interface";
 import { Router } from "express";
+
+import { Routes } from "@/interfaces/routes.interface";
 import HelloController from "./hello.controller";
 
 class HelloRoute implements Routes {
